@@ -33,8 +33,6 @@ const Pagination = ({ children }) => {
     dispatch(changePageByPageNum(num));
   };
 
-  console.log(totalItems);
-
   return (
     <div className="pagination">
       <div>{children}</div>

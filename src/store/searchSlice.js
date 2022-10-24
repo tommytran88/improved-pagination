@@ -37,7 +37,7 @@ export const changePageByPageNum = createAsyncThunk(
   async (switchedPage, thunkAPI) => {
     const maxResults = thunkAPI.getState().search.maxResults;
     const startIndex = switchedPage * maxResults;
-    console.log("startIndex", startIndex);
+    // console.log("startIndex", startIndex);
     const keyword = thunkAPI.getState().search.keyword;
     const res = await searchAPI(keyword, startIndex, maxResults); //pagination
     return res.data;
