@@ -1,0 +1,157 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  padding:0;
+  margin:0
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+.app{
+  display: flex;
+  width: 100%;;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:30px
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:30px;
+  padding-left: 50px;
+}
+
+.header a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.home{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  flex-direction: column;
+
+}
+
+.book-item{
+  width:650px;
+  height:500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  padding:10px;
+}
+
+.book-item .thumbnail{
+  flex-basis: 50%;
+}
+
+.book-item .text-info{
+  flex-basis: 50%;
+}
+.book-item .text-info ul{
+  padding:0;
+}
+.book-item .text-info ul li{
+  margin:10px
+}
+
+.book-list{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.thumbnail{
+  
+}
+.thumbnail img{
+  width:100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.wishlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+
+.pagination .btn__container{
+  display: flex;
+  gap:15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color:  black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
